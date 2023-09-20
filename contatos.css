@@ -1,0 +1,23 @@
+.titulo {
+  margin: 0 auto;
+}
+
+.contatos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contato-circulo {
+  padding: 16px;
+  border: 4px solid #FFA500;
+  border-radius: 50%;
+}
+
+.photo {
+  margin: 10px;
+}
+
+.photo img {
+  max-width: 100%;
+  height: auto;
+}
