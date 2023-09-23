@@ -1,0 +1,237 @@
+/* ajustes do fundo da pagina*/
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: hwb(0 56% 43% / 0.507);
+}
+/*rodape parte baixa*/
+#rodape {
+    width:  100%;
+    border-radius: 30%;
+    position:absolute;
+    bottom: 0;
+    left: 0;}
+footer img {
+    max-width: 35px; /* Defina o tamanho máximo desejado para as imagens */
+    height: auto; /* Mantém a proporção original */
+    margin-right: 1px; /* Espaçamento entre as imagens */
+    }
+.main div p {
+    box-align: center;
+}
+
+/* rodape parte a qual fica a escrita 2023*/
+footer {
+	background-color: #0f0f0f;
+	color: #faf8f8;
+	padding: 10px;
+	text-align: center;
+	margin-top: 10px;
+}
+/*parte destinada aos botoes de navegaçao*/
+#promoçoes {
+    border-bottom: 50px;
+    align-items: flex-start;
+}
+header {
+    background-color: #ee8915;
+    padding: 10px;
+    display:flow-root;    /* Use flexbox para alinhar os elementos */
+    align-items:center; /* Centralize verticalmente os elementos do cabeçalho */
+}
+
+header image {
+    max-width: 150px; /* Defina o tamanho máximo da imagem */
+    align-self: left;
+    margin-right:left; /* Adicione margem à direita da imagem para separá-la do conteúdo */
+}
+
+/* inicio.css distacia entre as bandeiras de cartoes*/
+img {
+    max-width: 100px;
+    margin-right: 70px; 
+    /* Adicione uma margem à direita da imagem para separá-la do título */
+}
+
+/* Adicione este estilo para alinhar a imagem da "LOGO" à esquerda */ 
+img {
+    order: -1; /* Altera a ordem de exibição da imagem para a esquerda (menor valor é à esquerda) */
+
+}
+
+/* styles.css mudar a cor laranja da parte de cima  */
+header {
+    background-color: #e97407;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+/* inicio.css botoes de "promoçao" "contato", "categoria" */
+nav ul {
+    list-style-type:none;
+    padding: 10;
+    text-align: right; /* Alinhe os botões à direita */
+}
+
+nav ul li {
+    display:inline-flex; /* Coloca os itens lado a lado os botoes de navegaçao */
+    margin-right: 20px; /* Adicione margem à direita dos itens para espaçamento */
+}
+
+.nav ul li a {
+    text-decoration:none;
+    color: #e97407; /* Cor dos botões */
+    font-weight: bold;
+}
+/*configura os botoes */
+nav ul li a {
+    text-decoration:solid;
+   font-weight:bold;
+}
+/* inicio.css *//* inicio.css "CONFIGURANDO BOTOES DE NAVEGAÇAO" */
+.button {
+    background-color: #eb8c20; /* Cor para os botoes  */
+    color: #fff; /* Cor do texto padrão */
+    padding: 08px 20px; /* Espaçamento interno do botão */
+    border:none;
+    cursor:pointer;     /* define o estilo do botao de click*/
+    text-align: center; /* alinha o texto */
+    text-decoration:dashed; /* decora o texto dos botoes */
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    border-radius: 30px;
+    transition: transform 0.4s; /* Adicione uma transição suave para o efeito 3D */
+}
+/*-----------------------------------------------------------------------------------------------------------------------*/
+
+/* CONFIGURAÇOES DOS BOTOES DE NAVEGAÇAO */
+.button:hover {
+    background-color: #2eb7cfa2; /* Cor de fundo ao passar o mouse sobre o botao*/
+    transform: perspective(700px) rotateY(33deg); /* Aplica a rotação 3D ao passar o mouse */
+}
+/* ajustes das logos das marcas */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+/* comando para o slide das logos */
+.slides {
+    display:flex;
+}
+
+/*slide dos logos */
+.slide {
+    flex: 0 0 auto;      /* Impede a expansão dos slides */
+    margin-right: -100px; /* Espaço entre os slides */
+    perspective: 20px;    /* Profundidade da perspectiva 3D */
+    transition: transform 0.40s; /* Efeito de transição */
+}
+/* Animação de transição automática dos slides */
+.slides {
+    animation: slide-animation 20s infinite; /* Altere o tempo (10s) conforme necessário */
+}
+
+@keyframes slide-animation {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-100%); }
+    40% { transform: translateX(-200%); }
+    60% { transform: translateX(-300%); }
+    80% { transform: translateX(-800%); }
+    100% { transform: translateX(0); }
+}
+
+
+.slide:hover {
+    transform: scale(1.1) rotateY(20deg); /* Efeito 3D ao passar o mouse */
+    cursor: pointer;                      /* Altera o cursor ao passar o mouse */
+}
+
+img {
+    max-width: 10%; /* Largura máxima das imagens " LOGOS " */
+    height: auto;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Pausa a animação quando o mouse está sobre o carrossel (logos das marcas )*/
+.image::view-transition [type="radio"]:checked ~ .slides {
+    animation-play-state:paused;
+
+}
+/* configuraçao do carousel dos tenis do INICIO */
+.image-slider {
+    display: flex;    /* Para alinhar as imagens em uma linha */
+    overflow: hidden; /* Para ocultar as imagens fora do container */
+}
+/*TENIS NA TELA*/
+.image-slider img {
+    max-width: 160px;   /* Largura máxima das imagens (tamanho médio) dos tenis em carousel */
+    height: auto;       /* Altura ajustada automaticamente */
+    margin-right: 180px; /* Espaçamento entre as imagens */
+    animation: slide 40s linear infinite; /* Animação de slide */
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-500%); /* Move as imagens para a esquerda velocidade dos tenis em carousel*/
+    }
+}
+
+/*--------------------------------------------------------------------------------------------/*
+/* Estilize a seção de slides */
+.image-slider {
+    position: relative;
+    overflow: hidden; /* Para esconder o gradiente fora da área de slides */
+}
+
+/* Adicione um fundo com gradiente para o carrousel  */
+.image-slider::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180%;
+    height: 180%;
+    background: linear-gradient(to bottom, #ffcc99, #ff9933); /* Gradiente de laranja claro a laranja escuro */
+    opacity: 0.7; /* Opacidade do gradiente */
+    z-index: -1; /* Coloca o gradiente atrás das imagens */
+}
+
+/* Estilize as imagens dos slides */
+.image-slider img {
+    /* Estilos das imagens, como largura máxima, altura automática, etc. */
+}
+
+/* Estilize o container dos slides (slides) */
+.slides {
+    display: flex;
+   
+}
+/* Estilize cada slide (div com a classe "slide") */
+.slide {
+
+    transition: transform 0.20s ease; /* Efeito de transição suave */
+   
+}
+/* Estilize as imagens dentro dos slides */
+.slide img {
+  
+    height: auto;
+    filter: drop-shadow(0 0 5px rgba(0, 255, 255, 0.8)); /* Efeito de sombra neon */
+}
+
