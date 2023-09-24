@@ -1,3 +1,90 @@
-.titulo {
-  margin: 0 auto;
-}
+
+    .promocao-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    
+    body {
+      font-family: 'Gothic', sans-serif;
+    }
+
+    
+    header {
+      text-align: center;
+      font-family: 'Gothic', sans-serif;
+      font-size: 36px;
+      font-weight: bold;
+      color: #faf7fa;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .promocao-item {
+      width: 60%;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .promocao-item img {
+      width: 100%;
+      border: 1px solid #ee0707;
+      border-radius: 5px;
+    }
+
+    .promocao-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .promocao-item {
+      width: 30%;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .promocao-item img {
+      width: 100%;
+      border-radius: 50%;
+      border: 5px solid transparent;
+      border-image: linear-gradient(45deg, #f55004b4, #fc2701);
+      border-image-slice: 1;
+    }
+
+    .promocao-item p {
+      margin: 10px 0;
+      font-weight: bold;
+      font-size: 50px;
+      color: #fff;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+  /*-------------------------------------------------------------------------------------------------------*/
+
+
+    @keyframes neonPulse {
+      0% { color: #ff00ff; }
+      50% { color: #00ffff; }
+      100% { color: #ff00ff; }
+    }
+    
+    .promocao-item img {
+      width: 100%;
+      border-radius: 50%;
+      border: 5px solid transparent;
+      border-image: linear-gradient(45deg, #e0720cce, #fa5d01);
+      border-image-slice: 1;
+    }
+
+    .promocao-item p {
+      margin: 10px 0;
+      font-weight: bold;
+      font-size: 38px;
+      color: #ff00ff;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      animation: neonPulse 1s infinite;
+    }
