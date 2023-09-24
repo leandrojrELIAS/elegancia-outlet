@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  background-color: #FFA500;
+  background-color: #eb8c20;
   padding: 16px;
   display: flex;
   justify-content: space-between;
@@ -21,4 +21,8 @@ header {
 
 main {
   padding: 16px;
+}
+
+ul {
+  list-style-type: none;
 }
