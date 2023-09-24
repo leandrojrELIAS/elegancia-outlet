@@ -8,16 +8,54 @@
 }
 
 .contato-circulo {
-  padding: 46px;
+  padding: 42px;
   border: 5px solid #FFA500;
   border-radius: 80%;
 }
 
 .photo {
-  margin: 10px;
+  margin: 20px;
 }
 
 .photo img {
   max-width: 100%;
   height: auto;
+}
+
+
+.navigation-menu {
+  display: inline-block;
+  margin: 26; /* Remover a margem padrão */
+  padding: 0; /* Remover o padding padrão */
+}
+
+.navigation-menu li {
+  display: inline-block; /* Manter os botões em linha */
+  margin-left: 30px; /* Espaçamento entre os botões - ajuste conforme necessário */
+}
+
+
+
+.navigation-button {
+  background-color: #ff8800;
+  color: #fff;
+  padding: 12px 16px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 30px;
+  border-style: groove;
+  transition: background-color 0.3s ease;
+  margin: 20;
+}
+
+.navigation-button:hover {
+  background-color: #b17025;
+}
+
+footer {
+  background-color: black; /* Define a cor de fundo como preto */
+  color: white; /* Define a cor do texto como branco para contrastar com o fundo preto */
+  padding:90px; /* Adiciona algum espaço interno para o conteúdo do footer */
+  text-align: center; /* Alinha o texto ao centro */
 }

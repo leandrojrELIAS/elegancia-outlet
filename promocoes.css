@@ -6,7 +6,32 @@
       flex-wrap: wrap;
       margin-top: 30px;
     }
+    .navigation-menu {
+      display: flex;
+      gap: 22px;
+      justify-content:flex-end;
+      height: 12px;
+      weight: 12px;
+    }
+    
+    .navigation-button {
+      background-color: #eb8c20;
+      color: #fff;
+      padding: 08px 12px;
+      margin-right: 10px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      border-radius: 20px;
+      border-style: groove;
+      transition: background-color 0.3s ease;
+    }
+    
+    .navigation-button:hover {
+      background-color: #bd7420;
+    }
 
+    
     
     body {
       font-family: 'Gothic', sans-serif;
@@ -61,15 +86,14 @@
       font-weight: bold;
       font-size: 50px;
       color: #fff;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     }
   /*-------------------------------------------------------------------------------------------------------*/
 
 
     @keyframes neonPulse {
-      0% { color: #ff00ff; }
-      50% { color: #00ffff; }
-      100% { color: #ff00ff; }
+      0% { color: #e70f07; }
+      50% { color: #272527; }
+      100% { color: #272527; }
     }
     
     .promocao-item img {
@@ -86,5 +110,5 @@
       font-size: 38px;
       color: #ff00ff;
       text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-      animation: neonPulse 1s infinite;
+      animation: neonPulse 2s infinite;
     }

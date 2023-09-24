@@ -20,6 +20,11 @@
     text-decoration: none; 
     text-align: center; /* alinha o texto */
     border-radius: 30px;
+    border-style: groove;
+    transition: background-color 0.3s ease; /* Adicionando transição para a cor de fundo */
+}
+.navigation-button:hover {
+    background-color: #bd7420; /* Alterando a cor de fundo ao passar o mouse */
 }
 /*-----------------------------------------------------------------------------------------------------------------------*/
 
@@ -81,4 +86,11 @@
     width: 80px;
     height: 60px;
     object-fit: contain;
+}
+
+footer {
+    background-color: black; /* Define a cor de fundo como preto */
+    color: white; /* Define a cor do texto como branco para contrastar com o fundo preto */
+    padding: 20px; /* Adiciona algum espaço interno para o conteúdo do footer */
+    text-align: center; /* Alinha o texto ao centro */
 }

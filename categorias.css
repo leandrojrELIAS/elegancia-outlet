@@ -1,52 +1,67 @@
-
-/*------plano de fundo -----------------------------------------------------------------------*/
+/* Plano de fundo */
 body {
   font-family: Arial, sans-serif;
-  margin: 10;
-  padding: 20;
+  margin: 10px; /* Correção: era margin: 10; */
+  padding: 20px;
   background-color: #91898391;
 }
 
-/*- ABA SUPERIOR CATEGORIA ---*/
+/* ABA SUPERIOR CATEGORIA */
 header {
   background-color: #f78401;
-  color: rgb(250, 245, 245);
+  color: #fff;
   text-align: center;
-  padding: 10px;
+  padding: 12px;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  border-radius: 35px;
+  border-radius: 15px;
   font-size: large;
-  
-}
-
-.main {
-  padding: 40px;
+  height: 70px;
 }
 
 .categorias-container {
   display: flex;
   justify-content: space-around;
-  padding: 50px;
+  padding: 60px; /* Ajusta as colunas M/F */
 }
 
-.produto a {
-  display: block;
-  text-align: center;
-  margin-top: 10px;
+.navigation-menu {
+  display: inline-block;
+  margin: 26px; /* Ajustado a margem */
+  padding: 0;
+}
+
+.navigation-menu li {
+  display: inline-flex;
+  margin-left: 42px;
+}
+
+.navigation-button {
+  background-color: #eb8c20;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 30px;
+  border-style: groove;
+  transition: background-color 0.3s ease;
+}
+
+.navigation-button:hover {
+  background-color: #bd7420;
 }
 
 .produto a img {
-  width: 45px; /* Ajuste o tamanho do logo do WhatsApp conforme necessário */
+  width: 56px; /* Ajuste o tamanho do logo do WhatsApp conforme necessário */
   height: auto;
 }
 
-
 .categoria-masculino, .categoria-feminino {
   width: 65%;
-  background-color: white;
   padding: 10px;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid orange; /* Adicionado a borda laranja entre os produtos */
 }
 
 .categoria-masculino {
@@ -60,74 +75,41 @@ header {
 .produto {
   margin-bottom: 20px;
   text-align: center;
+  border-bottom: 2px solid orange; /* Adicionado a borda laranja entre os produtos */
+  padding-bottom: 10px; /* Adicionado espaçamento entre a borda e o texto */
 }
 
-.produto img {
-  width: 80%;
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
 
 .produto p {
   font-size: 1.1em;
   margin-top: 10px;
   color: #333;
 }
-
-h2 {
-  color: #333;
-}
-
-/* carrousel para cad foto dos produtos---*/ 
-
-/* Restante do seu CSS */
-
-
 .carrossel {
   display: flex;
-  justify-content:baseline;
   overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
   margin-bottom: 10px;
 }
 
 .carrossel img {
-  width: 10px; /* Largura máxima das imagens no carrossel */
-  height: 10px;
-  border: 1px solid #ccc; /* Borda cinza ao redor das imagens */
-  border-radius: 5px; /* Borda arredondada */
-  margin: 0 0px; /* Espaçamento entre as imagens */
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
 }
 
-
-/*-------------espaço destinado para o caroussel das fotos dos produtos---------------*/
-
 .produto {
-  margin-bottom: 2px;
-  text-align: left;
-  border: 2px solid orange; /* Borda laranja */
-  border-radius: 10px; /* Borda arredondada */
-  padding: 1px; /* Espaçamento interno */
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 2px solid orange;
+  padding-bottom: 10px;
   position: relative;
 }
 
-
-.produto .carousel {
-  display: flex;
-  overflow-x: auto;
-  margin-bottom: 10px;
-}
-
-.produto .carousel img {
- max-width: 20px; /* Largura das imagens */
- max-height: 20px; /* Altura das imagens */
-  border: 4px solid #ccc; /* Borda cinza ao redor das imagens */
-  border-radius: 5px; /* Borda arredondada */
-  margin-right: 5px; /* Espaçamento entre as imagens */
-}
-
-
-.produto .prev, .produto .next {
+.produto .next {
   background-color: orange;
   color: white;
   padding: 10px 15px;
@@ -136,11 +118,19 @@ h2 {
   cursor: pointer;
   position: absolute;
   top: 50%;
+  right: 5px;
   transform: translateY(-50%);
 }
 
-.produto .next {
-  right: 5px;
+.produto .prev {
+  background-color: orange;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
 }
-
-/*--------------------------------------*/

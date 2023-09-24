@@ -1,0 +1,26 @@
+const carrossels = document.querySelectorAll('.carrossel');
+
+carrossels.forEach(carrossel => {
+  const prevButton = carrossel.parentElement.querySelector('.prev');
+  const nextButton = carrossel.parentElement.querySelector('.next');
+
+  let scrollAmount = 0;
+
+  prevButton.addEventListener('click', () => {
+    scrollAmount -= 200;
+    carrossel.scrollTo({
+      top: 0,
+      left: scrollAmount,
+      behavior: 'smooth'
+    });
+  });
+
+  nextButton.addEventListener('click', () => {
+    scrollAmount += 200;
+    carrossel.scrollTo({
+      top: 0,
+      left: scrollAmount,
+      behavior: 'smooth'
+    });
+  });
+});
